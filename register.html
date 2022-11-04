@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>MAKAUT || REGISTER</title>
+
+    <style>
+        /* contact page  */
+
+        #contact-page-header-title {
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid var(--deepblue);
+            border-radius: 10px;
+        }
+
+        #conatct-page-header {
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid var(--deepblue);
+            border-radius: 10px;
+        }
+
+        #contact-page-form {
+            text-align: center;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid var(--deepblue);
+            border-radius: 10px;
+        }
+
+        /* from  */
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        select{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            /* resize: vertical;  */
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+
+        input[type="submit"] {
+            background-color: var(--deepblue);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+
+        input[type="submit"]:hover {
+            background-color: white;
+            color: black;
+        }
+
+        #form-container {
+            border-radius: 5px;
+            background-color: var(--lightblue);
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid var(--deepblue);
+            border-radius: 10px;
+
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        #location {
+            margin-bottom: 100px;
+        }
+
+        #location p {
+            margin: 20px;
+        }
+
+        #location iframe {
+            border-radius: 10px;
+        }
+
+        #location {
+            border: 2px solid var(--deepblue);
+            margin: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            min-height: 300px;
+            margin-bottom: 200px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- title -->
+    <div id="title">
+        <img src="files/images/makaut-logo.png" alt="">
+        <h1 id="title-title">MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL</h1>
+        <h4 id="title-subtile">(FORMERLY KNOWN AS WEST BENGAL UNIVERSITY OF TECHNOLOGY)</h4>
+    </div>
+
+    <!-- navbar -->
+    <!-- navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+
+        <a href="tech-event.html">Tech Event</a>
+
+        <a href="cutural-event.html">Cutural Event</a>
+
+        <a class="active" href="register.html">Register For Event</a>
+    </div>
+
+    <!-- from header  -->
+    <div id="contact-page-form">
+        <h2>Register For Event</h2>
+    </div>
+
+    <!-- from  -->
+    <div id="form-container">
+        <form action="#">
+            <div class="row">
+                <div class="col-25">
+                    <label for="name">Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="mobile-number">Mobile Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="mobile-number" name="mobile-number" placeholder="Your Mobile Number"
+                        min="12" max="12">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Your Email ID">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="departmet">Department</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="departmet" name="departmet" placeholder="Departmet.. eg: IT, CSE">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="year">Year</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="year" name="year" placeholder="Year.. eg: 1st year, 2nd year">
+                </div>
+            </div>
+
+            <label for="year">Select Event</label>
+            <select name="events" id="events">
+                <option value="te">Tech Events</option>
+                <option value="ce">Cutural Events</option>
+                <option value="both">Tech Events & Cutural Events</option>
+            </select>
+            <br>
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- contact us  -->
+    <div id="contact-page-header-title">
+        <h2>Contact Us</h2>
+    </div>
+    <div id="conatct-page-header">
+        <p><b>Address:&nbsp</b>NH-12 (Old NH-34), Simhat, Haringhata, Nadia:741249</p>
+        <p><b>Phone Number:&nbsp</b>+91 8981153691</p>
+        <p><b>Email:&nbsp</b>it.makaut@gmail.com</p>
+    </div>
+
+    <!-- location  -->
+    <div id="location">
+        <h2>Location</h2>
+        <p>Haringhata Farm, West Bengal, 741249</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4441.634110618903!2d88.54184277052411!3d22.9576174227528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8bf5871a9e0d7%3A0x3cbdf3b9f157e355!2sMaulana%20Abul%20Kalam%20Azad%20University%20of%20Technology!5e1!3m2!1sen!2sin!4v1662141802519!5m2!1sen!2sin"
+            width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <p>Made By - Rahul Dutta</p>
+        <a href="register.html">🔼</a>
+    </div>
+
+
+</body>
+
+</html>
